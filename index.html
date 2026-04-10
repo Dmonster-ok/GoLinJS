@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+  <title>Game of Life</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body class="center">
+  
+  <button id="title" class="btn">Conway's Game Of Life</button>
+  <div id="grid"></div>
+  
+  <span class="btns inpts">
+    <input type="button" class="btn" value="Biase" id="biase_reset"/>
+    <input type="range" id="biase" min="0" max="1" value="0.25" step="0.05" />
+    <input type="number" class="btn" id="biase_input" min="0" max="1"
+    value="0.25" />
+  </span>
+  
+  <span class="btns inpts">
+    <input type="button" class="btn" id="randomize" value="Grid" />
+    <input type="range" id="grid_count" value="16" min="3" max="201" />
+    <input type="number" class="btn" id="grid_count_input" min="3" max="201" value="16" />
+  </span>
+  
+    <button type="button" id="play" class="btn">Play</button>
+  
+  <script src="./main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./utils.js" type="text/javascript" charset="utf-8"></script>
+  
+</body>
+</html>
